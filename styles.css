@@ -386,3 +386,38 @@ nav {
         grid-template-columns: 1fr; /* 1 coluna em telas menores */
     }
 }
+/* Ajuste para o cabeçalho em telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilhar os itens no cabeçalho */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Itens do menu empilhados */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Espaço entre os itens do menu */
+    }
+}
+/* Ajustes de layout para telas menores */
+@media (max-width: 768px) {
+    .sobre-nos, .dr-gustavo {
+        width: 100%; /* Ocupa a largura total da tela em telas menores */
+        margin: 10px 0; /* Espaço entre as seções */
+    }
+}
+
+/* Para telas de celular ainda menores (até 480px) */
+@media (max-width: 480px) {
+    .sobre-nos, .dr-gustavo {
+        padding: 15px; /* Ajusta o padding para caber melhor em telas menores */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+}
+/* Responsividade geral para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
