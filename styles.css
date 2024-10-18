@@ -1,0 +1,388 @@
+:root {
+    --cor-fundo-claro: #b4b4b4;
+    --cor-fundo-branco: white;
+    --cor-texto: #333;
+    --cor-amarelo: #ffec19;
+    --cor-amarelo-claro: #fff476;
+    --cor-preto: black;
+    --cor-rodape: black;
+    --cor-rodape-texto: white;
+}
+
+.ansiedade-depressao,
+.sobre-nos,
+.dr-gustavo,
+.por-onde-comecar-container,
+.tdah,
+.teste-neuropsicologico,
+.atendimento-online,
+.tcc,
+.aba-autismo,
+.home,
+.blog {
+    transition: transform 0.5s; /* Adiciona uma transição suave de 0.5s */
+}
+
+/* Efeito de aumento ao passar o mouse */
+.ansiedade-depressao:hover,
+.sobre-nos:hover,
+.dr-gustavo:hover,
+.por-onde-comecar-container:hover,
+.tdah:hover,
+.teste-neuropsicologico:hover,
+.atendimento-online:hover,
+.tcc:hover,
+.aba-autismo:hover,
+.home:hover,
+.blog:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 10% */
+}
+
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-fundo-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px; /* Placeholder para a logo */
+    height: auto;
+    margin-right: 10px; /* Espaço entre logo e texto */
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.titulo-clinica h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.titulo-clinica h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+}
+
+/* Menu de navegação */
+.menu-navegacao {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.menu-navegacao li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 30px 30px;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Adiciona transição suave */
+}
+
+.menu-navegacao li a:hover {
+    color: white; /* Texto branco ao passar o mouse */
+}
+
+/* Contêiner geral da seção "Apresentação" */
+.apresentacao-container {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens nas extremidades do contêiner */
+    background-color: #b4b4b4; /* Fundo cinza claro da página */
+    margin-bottom: 5px;
+}
+
+/* Estilo do quadrado "Sobre Nós" */
+.sobre-nos {
+    background-color: white;
+    width: 49.5%; /* Ocupa 49% da largura da tela */
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 5px;
+}
+
+/* Estilo do quadrado "Dr. Gustavo Agostino" */
+.dr-gustavo {
+    display: flex; /* Usando flexbox para alinhar a imagem e o texto */
+    justify-content: space-between; /* Espaça os itens nas extremidades do contêiner */
+    align-items: stretch; /* Alinha os itens para preencher a altura do contêiner */
+    background-color: white;
+    width: 49.5%; /* Deve ser igual à largura da seção "Sobre Nós" */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+}
+
+/* Estilo do texto do Dr. Gustavo */
+.descricao {
+    background-color: white;
+    width: 49.5%; /* Ocupa 49% da largura da tela */
+    padding: 20px;
+    margin-left: 5px;
+}
+
+/* Estilo da foto */
+.foto {
+    display: flex; /* Usar flexbox para garantir que a imagem preencha o espaço */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    height: 100%; /* Faz a foto ocupar toda a altura do contêiner */
+}
+
+.foto img {
+    width: 100%; /* Faz a imagem ocupar 100% do espaço disponível */
+    height: 100%; /* Faz a imagem ocupar 100% do contêiner */
+    max-width: 220px; /* Define um limite de largura se necessário */
+    object-fit: cover; /* Preenche o espaço do contêiner sem distorcer */
+}
+
+
+/* Contêiner geral da sessão "Especialidades" */
+.especialidades-container {
+    background-color: #ffec19; /* Amarelo claro */
+    padding: 20px; /* Diminui o padding para reduzir o espaço */
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 5px; /* Espaço menor abaixo da sessão */
+}
+
+.especialidades-container h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px; /* Diminui a margem inferior do título para trazê-lo para cima */
+}
+
+/* Grid para dispor os quadrados */
+.especialidade-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 quadrados por linha */
+    gap: 3px; /* Diminui o espaço entre os quadrados */
+    padding: 10px; /* Reduz o padding ao redor dos quadrados */
+}
+
+/* Estilo dos quadrados */
+.ansiedade-depressao,
+.aba-autismo,
+.tcc,
+.atendimento-online,
+.teste-neuropsicologico,
+.tdah {
+    background-color: #fff476; /* Fundo branco dos quadrados */
+    padding: 25px; /* Aumenta o padding interno para ocupar mais espaço */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left;
+    transition: transform 0.5s; /* Adiciona uma transição suave de 0.5s */
+}
+
+/* Efeito de aumento ao passar o mouse */
+.ansiedade-depressao:hover,
+.aba-autismo:hover,
+.tcc:hover,
+.atendimento-online:hover,
+.teste-neuropsicologico:hover,
+.tdah:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 10% */
+}
+
+.especialidade h3 {
+    font-size: 1.5rem;
+    color: black; /* Cor preta para o título */
+    margin-bottom: 10px;
+}
+
+.especialidade p {
+    font-size: 1.1rem;
+    color: black; /* Cor preta para o texto */
+}
+
+/* Contêiner geral da sessão "Por onde começar?" */
+.por-onde-comecar-container {
+    background-color: white; /* Cor branca da sessão */
+    padding: 20px; /* Espaçamento interno */
+    margin: 5px 5px; /* Espaçamento externo igual ao das outras sessões */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do título da sessão */
+.por-onde-comecar-container h2 {
+    font-size: 2rem; /* Tamanho do título */
+    color: black; /* Cor do título */
+    margin: 10px; /* Margem inferior para separar do conteúdo */
+}
+
+/* Contêiner para os itens */
+.por-onde-comecar-itens {
+    display: flex; /* Usando flexbox para alinhar os itens lado a lado */
+    justify-content: space-between; /* Espaço entre os itens */
+}
+
+/* Estilo dos itens */
+.por-onde-comecar-item {
+    flex: 1; /* Faz com que todos os itens tenham o mesmo tamanho */
+    margin: 10px; /* Margem lateral entre os itens */
+    font-size: 1.1rem; /* Tamanho da fonte dos itens */
+    color: black; /* Cor preta para o texto */
+}
+/* Contêiner geral da sessão "Comece a sua terapia" */
+.comecar-terapia-container {
+    background-color: #FFEB3B; /* Cor amarelo claro da sessão */
+    padding: 20px; /* Espaçamento interno */
+    margin: 5px 5px; /* Espaçamento externo igual ao das outras sessões */
+}
+
+/* Estilo do título da sessão */
+.comecar-terapia-container h2 {
+    font-size: 2rem; /* Tamanho do título */
+    color: black; /* Cor do título */
+    text-align: left; /* Centraliza o texto */
+    margin-bottom: 20px; /* Margem inferior para separar do conteúdo */
+}
+
+/* Estilo do grid da sessão */
+.comecar-terapia-grid {
+    display: grid; /* Usando grid para organizar os elementos */
+    grid-template-columns: 1fr 2fr; /* Define duas colunas: a primeira ocupa 1/3 e a segunda 2/3 */
+    gap: 5px; /* Espaçamento entre os itens do grid */
+    align-items: start; /* Alinha os itens ao topo */
+}
+
+/* Contêiner para contatos e redes sociais */
+.contatos-container {
+    background-color: #b4b4b4; /* Cor branca para o contêiner */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo do título de contatos */
+.contatos-container h3 {
+    font-size: 1.5rem; /* Tamanho do título */
+    margin-bottom: 5px; /* Margem inferior */
+}
+
+/* Estilo dos botões das redes sociais */
+.redes-sociais {
+    display: flex; /* Usando flexbox para alinhar os ícones */
+    gap: 10px; /* Espaçamento entre os ícones */
+}
+
+/* Estilo dos botões de rede social */
+.rede-social-button img {
+    width: 40px; /* Tamanho do ícone */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Estilo do contêiner de e-mail */
+.email-container {
+    background-color: #b4b4b4; /* Cor branca para o contêiner */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo do título de e-mail */
+.email-container h3 {
+    font-size: 1.5rem; /* Tamanho do título */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo do formulário */
+.comecar-terapia-form {
+    display: flex; /* Usando flexbox para alinhar os campos no formulário */
+    flex-direction: column; /* Alinha os campos na coluna */
+}
+
+/* Estilo dos campos de entrada */
+.comecar-terapia-form input,
+.comecar-terapia-form textarea {
+    width: 100%; /* Largura dos campos */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento inferior entre os campos */
+    border: 1px solid #ccc; /* Borda */
+}
+
+/* Estilo do botão de enviar */
+.comecar-terapia-enviar {
+    padding: 10px; /* Espaçamento interno do botão de enviar */
+    background-color: rgb(232, 232, 232); /* Cor verde do botão */
+    color: #000000; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Efeito hover do botão de enviar */
+.comecar-terapia-enviar:hover {
+    background-color: #818181; /* Cor do botão ao passar o mouse */
+}
+/* Contêiner do rodapé */
+.footer-container {
+    background-color: black; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 5px; /* Margem superior para separar do conteúdo anterior */
+}
+
+/* Estilo do conteúdo do rodapé */
+.footer-content {
+    display: flex; /* Usamos flexbox para o layout */
+    justify-content: space-between; /* Espaçamento entre a marca e as informações do rodapé */
+    align-items: center; /* Alinha verticalmente os itens */
+    width: 100%; /* Certifica que ocupa toda a largura disponível */
+}
+
+/* Estilo da marca */
+.marca {
+    font-size: 1.5rem; /* Tamanho do texto da marca */
+    text-align: center; /* Centraliza o texto na área da marca */
+    flex: 1; /* Permite que a marca ocupe a mesma largura que as informações à direita */
+}
+
+/* Estilo do lado direito do rodapé */
+.footer-right {
+    text-align: center; /* Alinha o texto à centro */
+    flex: 1; /* Permite que as informações ocupem a mesma largura que a marca */
+}
+
+/* Estilo dos parágrafos do rodapé */
+.footer-right p, .marca {
+    margin: 5px 0; /* Margem entre os parágrafos */
+}
+
+/* Estilo específico para o aviso de política de privacidade */
+.politica-privacidade {
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo dos direitos reservados e CRP */
+.direitos-reservados, .crp {
+    font-size: 1rem; /* Tamanho do texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .especialidade-grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+    .comecar-terapia-grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+}
